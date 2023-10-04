@@ -1,0 +1,110 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+/* html,
+body {
+    font-family: 'Poppins', sans-serif;
+} */
+:root {
+    --Poppins-: 'Poppins', sans-serif;
+   
+    --orange:#D1884F;
+    --Dark-blue:#008AAA;
+    --Light-blue: #3BBADB;
+}
+nav{
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content: end;
+    height: 100px;
+    width: 085%;
+column-gap: 50px;
+}
+nav .item{
+    display: flex;
+    column-gap: 10px;
+}
+nav .item a{
+    color: black;
+    font-size: 20px;
+}
+nav .item a:hover, nav .item a.active{
+    color: var(--orange);
+}
+nav .item a i{
+
+    margin-right: 5px;
+}
+.main-content {
+ display: flex;
+ flex-direction: row;
+ justify-content: center;
+ /* align-items: center; */
+}
+
+.main-content div article{
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    width: 60%;
+    margin-top: 50px;
+    margin-left: 100px;
+}
+.main-content div article span{
+    font-size: 30px;
+    font-weight: 300;
+    color: var(--Light-blue);
+}
+.main-content div article h1{
+    font-size: 50px;
+    color: var(--Dark-blue);
+
+}
+.main-content div article  h1 span{
+    font-size: 50px;
+    color: var(--orange);
+    font-weight: 600;
+
+}
+.main-content div article p{
+   font-size:20px;
+}
+.main-content div article .see-more{
+ color: var(--Light-blue);   
+ font-size:20px;
+
+} 
+.main-content div article div .hire-me{
+    color: white;
+    font-size: 25px;
+    border-radius: 5px;
+    background-color: var(--Dark-blue);
+    padding: 5px 30px;
+    margin-right: 30px;
+    box-shadow: 2px 5px 10px #888888;
+
+}
+.main-content div article div .see-my-pro{
+    border: 1px solid var(--Dark-blue);
+    color: var(--Dark-blue);
+    background-color: transparent;
+    font-size: 25px;
+    border-radius: 5px;
+    padding: 5px 30px;
+    /* box-shadow: 2px 5px 10px #888888; */
+
+}
+.main-content div img{
+    width: 350px;
+    height: 300px;
+    margin-top: 50px;
+    margin-right: 200px;
+    border-radius: 0 0 0 200px;
+    box-shadow: var(--Light-blue) -15px 10px;
+
+}
